@@ -10,11 +10,15 @@ const pluses = 3;
 // მაგალითად თუ: n = 10;
 // ეკრანზე უნდა გამოიტანოთ: ----------
 
-for (let i = 0; i < n; i ++){
-    if(i < n){
-        string = '-';
-    }else if(pluses < n){
-        string = '+'
+let result = '';
+
+
+for (let i = 0; i < n; i++) {
+    if (i < pluses) {
+        result += '+';
+    } else {
+        result += '-';
     }
-    console.log(string);
 }
+
+console.log(result);
